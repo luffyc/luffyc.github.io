@@ -35,10 +35,10 @@ a{
   padding: 8em 0 2em 0;
 }
 .touxiang{
-  width:11rem;
-  height:11rem;
+  width:13rem;
+  height:13rem;
   border-radius: 50%;
-  background: url(../images/boy.jpg) center center no-repeat;
+  background: url(../images/me.jpg) 0 0 no-repeat;
   background-size: 100%;
   margin:auto;
 }
