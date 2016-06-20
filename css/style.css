@@ -12,7 +12,7 @@ p {margin: 0;}
 }
 @font-face{
    font-family: my-font;
-    src: url(../fonts/华康娃娃体W5.ttf) format('truetype');
+    src: url(../fonts/W5.TTf) format('truetype');
 }
 html,body{
   font-family:OpenSans-Regular,my-font;
@@ -29,6 +29,125 @@ body{
 }
 a{
   text-decoration: none;
+}
+ul,li{
+  display: block;
+}
+@keyframes move1{
+  0%{
+    transfrom:translateX(0);
+  }
+  25%{
+    transfrom:translateX(15px);
+  }
+  50%{
+    transform:translateX(30px);
+  }
+  75%{
+    transfrom:translateX(15px);
+  }
+  100%{
+    transform:translateX(0);
+  }
+} 
+@keyframes move2{
+  0%{
+    transfrom:translateY(0);
+  }
+  25%{
+    transform:translateY(10px);
+  }
+  50%{
+    transfrom:translateY(20px);
+  }
+  75%{
+    transfrom:translateY(10px);
+  }
+  100%{
+    transform:translateY(0);
+  }
+} 
+@keyframes move3{
+  0%{
+    transfrom:translateX(0);
+  }
+  25%{
+    transfrom:translateX(-15px);
+  }
+  50%{
+    transform:translateX(-30px);
+  }
+  75%{
+    transfrom:translateX(-15px);
+  }
+  100%{
+    transform:translateX(0);
+  }
+} 
+.music{
+  width:89px;
+  height:70px;
+  position: absolute;
+  cursor: pointer;
+}
+#music_icon1{
+  background:url(../images/music_icons.jpg) -62px -42px no-repeat;
+  top:12em;
+  right:20em;
+  transform:rotateZ(20deg);
+  animation:move1 2s ease .6s both infinite;
+}
+#music_icon2{
+  background:url(../images/music_icons.jpg) -244px -180px no-repeat;
+  top:7em;
+  left:8em;
+  transform:rotateZ(-10deg);
+  animation:move2 1.4s ease .6s both infinite;
+}
+#music_icon3{
+  background:url(../images/music_icons.jpg) -63px -180px no-repeat;
+  top:26em;
+  left:15em;
+  transform:rotateZ(20deg);
+  animation:move3 2s ease .6s both infinite;
+}
+#music_icon4{
+  background:url(../images/music_icons.jpg) -244px -42px no-repeat;
+  top:36em;
+  right:8em;
+  transform:rotateZ(-5deg);
+  animation:move2 1.4s ease .6s both infinite;
+}
+@keyframes y-ain {
+    0% {
+        transform: rotateY(0)
+    }
+
+    40% {
+        transform: rotateY(0)
+    }
+
+    100% {
+        transform: rotateY(360deg)
+    }
+}
+.ps{
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  position: fixed;
+  cursor: pointer;
+  top:1em;
+  right:1em;
+  background: #fff;
+  color:#71B9FC;
+  font-size: 24px;
+  font-family: Nunito-Regular;
+  animation: y-ain 2s infinite;
+  transform-style: preserve-3d;
+  z-index: 999999;
 }
 .logo {
   text-align: center;
@@ -583,6 +702,13 @@ i.insta:hover {
 }
 /*--responsive-design--*/
 @media (max-width:1024px){
+#music_icon1{
+  right:10em;
+}
+#music_icon3{
+  top:28em;
+  left:10em;
+}
 .banner-info h2 {
   width: 58%;
   font-size:4em;
@@ -625,6 +751,32 @@ i.insta:hover {
 }
 /*--responsive-design--*/
 @media (max-width:768px){
+.music{
+  width:84px;
+  height:60px;
+}
+#music_icon1{
+  background: url(../images/music_icons1.jpg) -62px -44px no-repeat;
+}
+#music_icon2{
+  background: url(../images/music_icons1.jpg) -232px -174px no-repeat;
+}
+#music_icon3{
+  top:23em;
+  left:15em;
+  background: url(../images/music_icons1.jpg) -64px -175px no-repeat;
+}
+#music_icon4{
+  right:3em;
+  top:28em;
+  background: url(../images/music_icons1.jpg) -232px -44px no-repeat;
+}
+.ps{
+  width:50px;
+  height:50px;
+  line-height: 50px;
+  font-size: 18px;
+}
 .banner-info h2 {
   width: 66%;
   font-size:3.5em;
@@ -667,6 +819,16 @@ i.insta:hover {
 }
 /*--responsive-design--*/
 @media (max-width:640px){
+  #music_icon1{
+    right:3em;
+  }
+  #music_icon2{
+    top:3em;
+    left:3em;
+  }
+  #music_icon3{
+   left:8em;
+  }
 .banner-info h2 {
   width: 69%;
   font-size: 3em;
@@ -698,6 +860,36 @@ i.insta:hover {
 }
 /*--responsive-design--*/
 @media (max-width:480px){
+.touxiang{
+  width:10em;
+  height:10em;
+}
+.music{
+  width:74px;
+  height:56px;
+}
+#music_icon1{
+  background: url(../images/music_icons2.jpg) -62px -44px no-repeat;
+}
+#music_icon2{
+  background: url(../images/music_icons2.jpg) -213px -158px no-repeat;
+}
+#music_icon3{
+  top:20em;
+  left:4em;
+  background: url(../images/music_icons2.jpg) -62px -158px no-repeat;
+}
+#music_icon4{
+  right:1em;
+  top:23em;
+  background: url(../images/music_icons2.jpg) -213px -44px no-repeat;
+}
+.ps{
+  width:40px;
+  height:40px;
+  line-height: 40px;
+  font-size: 14px;
+}
 .banner-info h2 {
   width: 86%;
   font-size: 2.5em;
@@ -762,6 +954,40 @@ div#portfoliolist {
 }
 }
 @media (max-width:320px){
+  .touxiang{
+  width:6em;
+  height:6em;
+}
+.music{
+  width:48px;
+  height:34px;
+}
+#music_icon1{
+  top:4em;
+  right:4em;
+  background: url(../images/music_icons3.jpg) -62px -44px no-repeat;
+}
+#music_icon2{
+  top:1em;
+  left:1em;
+  background: url(../images/music_icons3.jpg) -157px -116px no-repeat;
+}
+#music_icon3{
+  top:8em;
+  left:5em;
+  background: url(../images/music_icons3.jpg) -62px -116px no-repeat;
+}
+#music_icon4{
+  right:1em;
+  top:10em;
+  background: url(../images/music_icons3.jpg) -157px -44px no-repeat;
+}
+.ps{
+  width:30px;
+  height:30px;
+  line-height: 30px;
+  font-size: 12px;
+}
 .logo h1 a {
   font-size: 1.2em;
 }

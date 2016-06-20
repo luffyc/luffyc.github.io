@@ -38,10 +38,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript">
 	jQuery(function($) {
 	    $(".swipebox").swipebox();
+	    var database = [
+	    {filename:'./musics/星期五见面.mp3'},
+	    {filename:'./musics/李贤 (我生命中最重要的).mp3'},
+	    {filename:'./musics/Boys And Girls.mp3'},
+	    {filename:'./musics/张艺兴 一个人.mp3'},
+	    ]
+	    audio = $('audio').get(0);
+	    audio.play();
+        
+        $('.ps').on('click',function(){
+            if(audio.paused){
+	    		audio.play();
+	    		$(this).text('stop');
+	    	}else{
+	            audio.pause();
+	            $(this).text('play');
+	    	}
+        })
+
+	    $('.play').on('click','li',function(){
+	    	currentsong = $(this).index();
+	    	audio.src = database[ currentsong ].filename;
+	    	audio.play();
+	    })
 	});
 </script>
 </head>
 <body>
+<audio src="./musics/星期五见面.mp3"></audio>
+<!-- animation -->
+<div class="ps">stop</div>
+<ul class="play">
+	<li class="music" id="music_icon1"></li>
+	<li class="music" id="music_icon2"></li>
+	<li class="music" id="music_icon3"></li>
+	<li class="music" id="music_icon4"></li>
+</ul>
 <!-- header -->
 <div class="banner">
 	<div class="container">
