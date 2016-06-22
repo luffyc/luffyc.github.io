@@ -316,7 +316,7 @@ ul,li{
   opacity: 0;
   transition:all .6s ease;
 }
-.a:hover,.a:focus{
+.a:hover{
   opacity: 1;
   color:#fff;
   text-decoration: none;
