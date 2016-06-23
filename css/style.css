@@ -160,6 +160,8 @@ ul,li{
   background: url(../images/me.jpg) 0 0 no-repeat;
   background-size: 100%;
   margin:auto;
+  position: relative;
+  z-index: 99999999999999;
 }
 .banner {
   background: #71B9FC;
