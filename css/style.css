@@ -239,15 +239,15 @@ ul,li{
   width:60%;
 }
 #css3{
-  width:70%;
+  width:75%;
 }
 #js{
-  width:76%;
+  width:82%;
 }
 #php{
-  width:60%;
+  width:68%;
 }
-#ai{
+#jquery{
   width:80%;
 }
 #ajax{
@@ -257,7 +257,7 @@ ul,li{
   width:70%;
 }
 #angular{
-  width:80%;
+  width:73%;
 }
 .progress-bar-danger-3{
   transition:all .6s ease;
