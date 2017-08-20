@@ -157,7 +157,7 @@ ul,li{
   width:13rem;
   height:13rem;
   border-radius: 50%;
-  background: url(../images/me.jpg) 0 0 no-repeat;
+  background: url(../images/me_.jpg) 0 0 no-repeat;
   background-size: 100%;
   margin:auto;
   position: relative;
@@ -244,8 +244,8 @@ ul,li{
 #js{
   width:82%;
 }
-#php{
-  width:68%;
+#ionic{
+  width:75%;
 }
 #jquery{
   width:80%;
@@ -253,11 +253,17 @@ ul,li{
 #ajax{
   width:60%;
 }
-#fullpage{
+#ts{
   width:70%;
 }
 #angular{
   width:73%;
+}
+#cordova{
+  width:68%;
+}
+#nodejs{
+  width:70%;
 }
 .progress-bar-danger-3{
   transition:all .6s ease;
